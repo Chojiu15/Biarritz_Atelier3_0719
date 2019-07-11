@@ -1,11 +1,19 @@
 <?php
+$autor = ['Arthur','Gaetan',''];
+$name = $autor [rand(0,2)];
 
-function sayHello($a)
+function sayHello($name)
 {
-    return $a;
+    if ($name == 'Arthur' || $name == 'Gaetan') {
+        return "Hello $name";
+    }
+    else {
+        return "Hello Dr. Manattan";
+    }
+
 }
 
-echo sayHello("Hello Nite Owl");
+echo sayHello($name);
 
 
 ?>
