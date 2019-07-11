@@ -4,7 +4,7 @@ include ('../src/function.php');
 echo sayHello('').'<br>';
 
 
-echo whoMamI('Docteur Manathan',$watchMan);
+echo whoMamI('Silk Spectre',$watchMan);
 ?>
 
 
