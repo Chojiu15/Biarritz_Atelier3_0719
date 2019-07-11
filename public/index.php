@@ -1,3 +1,3 @@
 <?php
 include ('../src/function.php');
-sayHello ();
+echo sayHello ("hello");
