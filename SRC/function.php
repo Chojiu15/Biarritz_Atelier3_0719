@@ -1,16 +1,18 @@
 <?php
-function sayHello($name)
+function sayHello(string $name): string
 {
-    if ($name == "") {
-        echo "Hello Dr Manhatan";
+    if ($name) {
+        return "Hello $name";
+    }else {
+        return "Hello Dr Manhattan";
     }
-    return $name;
+    
 }
-/*echo sayHello("Hello Nite Owl");*/
+
 
 $watchmen = ['Dr. Manhattan', 'Ozymandias', 'Silk Spectre', 'Rorschach', 'The comedian', 'Nite Owl'];
 
-function whoAmI(string $name, array $watchmen)
+function whoAmI(string $name, array $watchmen):string
 { 
     for ($i=0; $i < count($watchmen); $i++) { 
                 if ($name ==  $watchmen[$i]) {
@@ -18,5 +20,6 @@ function whoAmI(string $name, array $watchmen)
         }
         
     }
+    return "rien du tout";
 }
 ?>
