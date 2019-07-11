@@ -8,11 +8,15 @@ function sayHello(string $name){
     return 'Hello Dr Manathan ';
     }
 }
-
-function whoAmI (string $nom ,array $watchmen ){
-    foreach ($watchmen as $value){ 
-        if ($nom == $value){ 
-        return $nom. " est un watchmen";}
+$watchmen = ['Dr Manhattan','Ozymandias','Silk Spectre','Rorschach','The comedian','Nite Owl'];
+$name = " ";
+function whoAmI ($name ,$watchmen ){
+    for ($i = 0; $i < count($watchmen); $i++){
+        if($name === $watchmen[$i]){ 
+        return $name. " est un watchmen";}
+      
     }
-    
+
+    return "ce n'est pas un watchmen";
+  
 }
