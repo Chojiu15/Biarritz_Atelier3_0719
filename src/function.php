@@ -1,42 +1,19 @@
 <?php
+$autor = ['Arthur','Gaetan',''];
+$name = $autor [rand(0,2)];
 
-$leTableauWatchmens = ['Dr. Manhattan', 'Ozymandias', 'Silk Spectre', 'Rorschach', 'The comedian', 'Nite Owl'];
-
-$leNomATester = "arthur";
-
-
-function whoAmI(string $leNomATester, array $leTableauWatchmens): string
+function sayHello($name)
 {
-    foreach ($leTableauWatchmens as $valeurDuleTableauWatchmens) {
-
-        if ($leNomATester == $valeurDuleTableauWatchmens) {
-            return "$leNomATester est un watchemen";
-        }
-
+    if ($name == 'Arthur' || $name == 'Gaetan') {
+        return "Hello $name";
     }
-    return "rien";
+    else {
+        return "Hello Dr. Manattan";
+    }
+
 }
 
-echo whoAmI($leNomATester, $leTableauWatchmens);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+echo sayHello($name);
 
 echo '<br>'.'<br>';
 
@@ -55,5 +32,5 @@ function whoAmI(string $leNomATester, array $leTableauWatchmens): string
 }
 echo whoAmI($leNomATester, $leTableauWatchmens);
 
-$noms = ['Dr. Manhattan', 'Ozymandias', 'Silk Spectre', 'Rorschach', 'The comedian', 'Nite Owl', 'toto', 'tata', 'titi'];
-$name =  $noms[rand(0, 8)];
+?>
+
